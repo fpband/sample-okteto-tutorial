@@ -8,6 +8,9 @@
         "bot"
     ],
     "repository": "https://github.com/fpband/WM3",
+    "website": "https://telegram.dog/AbirHasan2005",
+    "success_url": "https://t.me/Discovery_Updates",
+    "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org or @TeleORG_Bot"
         },
@@ -16,8 +19,13 @@
         },
         "BOT_TOKEN": {
             "description": "Get this from @BotFather XD"
-        },
+        }
+        
+    },
     "buildpacks": [ 
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }, 
         { 
             "url": "heroku/python"
         }
